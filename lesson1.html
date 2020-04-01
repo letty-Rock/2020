@@ -1,0 +1,25 @@
+<html>
+    <head>
+       
+        <title>Curso Javascript</title>
+    </head>
+    <body>
+        <script>
+            function retornaEnderecoUsuario(endereço) {
+
+            return "O usuário mora em " + endereço.cidade + "/" + endereço.uf + ", no bairro " + endereço.bairro + ", " + endereço.rua + " com n°" + endereço.numero ;
+            }
+       var endereço = {
+           rua: "Rua dos pinheiros",
+           numero: 1293,
+           bairro: "Centro",
+           cidade: "São Paulo",
+           uf: "SP",
+       };
+            
+         var InformacoesEndereco = retornaEnderecoUsuario(endereço);
+            
+       console.log(InformacoesEndereco);
+    </script>
+    </body>
+</html>
